@@ -81,7 +81,7 @@ Route::get('question/delete/{id}',array(
 Route::get('answer/vote/{direction}/{id}',array(
 							'as' => 'vote_answer',
 							'before' => 'user',
-							'uses' => 'AnswersControllergetVote'))
+							'uses' => 'AnswersController@getVote'))
 ->where(array('direction' => '(up|down)', 'id' => '[0-9]+'));
 
 Route::get('question/{id}',array(

@@ -120,7 +120,7 @@
 			<div class="rbox">
 				<p>{{nl2br($answer->answer)}}</p>
 			</div>
-			<div class="rrpolinf">
+			<div class="rrepolinf">
 				<p>Answered by 
 				<a href="#">{{$answer->users->first_name.' '.$answer->users->last_name}} </a>
 				 around {{date('m/d/Y H:i:s', strtotime($answer->created_at))}}

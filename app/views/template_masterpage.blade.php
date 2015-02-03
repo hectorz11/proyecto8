@@ -66,10 +66,10 @@
 	{{ HTML::script('assets/js/bootstrap.min.js') }}
 	{{ HTML::script('assets/js/bootstrap.js') }}
 	<script src="https://code.jquery.com/jquery.js"></script>
-	{{-- Each page's custom assets (if available) will be yield here --}}
+	{{-- Activos de cada pagina (si esta disponible) se producen aqui --}}
 	@yield('footer_assets')
 
-	{{-- if the user is logged in and on index or question details page --}}
+	{{-- si el usuario esta conectado sera visualizado en 'index' y 'details' 'question' --}}
 	@if(Sentry::check() && (Route::currentRouteName() == 'index' || Route::currentRouteName() == 
 	'tagged' || Route::currentRouteName() == 'question_details'))
 		<script type="text/javascript">
